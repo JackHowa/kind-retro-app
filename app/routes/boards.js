@@ -1,6 +1,7 @@
 import Route from '@ember/routing/route';
 
 // uuid is unique string auto-generated
+// todo: add date
 export const ALL_BOARDS = [
   {
     uuid: '8374938',
