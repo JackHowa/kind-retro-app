@@ -1,5 +1,24 @@
 {{page-title "Boards"}}
 
-<h1 class="text-xl">Boards</h1>
+<div class="flex sm:flex-row flex-col">
 
-{{outlet}}
+	{{!-- width 1/3 on viewport greater than mobile --}}
+	<section class="sm:w-1/3">
+		{{!-- loop through with route model to get --}}
+		{{#each @model as |board|}}
+			<LinkTo 
+				class="block p-6 m-2 rounded-lg border border-gray-200 hover:bg-gray-100" 
+				@route="boards.board" 
+				{{!-- pass in the uuid to query the board list --}}
+				@model={{board.uuid}}
+				@activeClass="bg-gray-300"
+			>
+				{{board.name}}
+			</LinkTo>
+		{{/each}}
+	</section>
+	<section class="sm:w-2/3">
+		{{!-- width 2/3 on viewport greater than mobile --}}
+		{{outlet}}
+	</section>
+</div>

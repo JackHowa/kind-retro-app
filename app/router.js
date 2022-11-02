@@ -8,6 +8,11 @@ export default class Router extends EmberRouter {
 
 Router.map(function () {
   // index route is implicit
-  this.route('boards');
+  this.route('boards', function () {
+    this.route('board', {
+      // interesting snake case for this is a rule
+      path: ':board_id',
+    });
+  });
   this.route('home');
 });
