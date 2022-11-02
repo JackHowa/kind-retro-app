@@ -3,6 +3,10 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Infra
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/025ad937-fa19-4a82-afa4-bb61cb55d2a1/deploy-status)](https://app.netlify.com/sites/aquamarine-seahorse-c80770/deploys)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
